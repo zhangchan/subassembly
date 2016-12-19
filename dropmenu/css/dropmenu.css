@@ -1,0 +1,11 @@
+*{margin: 0;padding: 0;}
+li{list-style-type: none;}
+
+
+
+.dropdown{position:relative;width: 200px;margin-left: 100px;margin-top: 100px;}
+.dropdown input{padding-left: 2%;width: 98%; height: 30px;}
+.dropdown .caret{background:url(../img/fqqb.png) -16px -177px no-repeat;position:absolute;top:6px;right:5px;padding:10px;cursor:pointer;}
+.dropdown ul.dropdown-menu{width:100%;position:absolute;background:#f4f4f4;border:1px solid #dbdbdb;display:none;z-index: 999;}
+.dropdown ul.dropdown-menu li{width:98%;padding-left:2%;height:30px;line-height:30px;color:#343434;cursor:pointer;text-align: left;}
+.dropdown ul.dropdown-menu li:hover{background:#e6e6e6;}
