@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+li{list-style-type: none;}
+
+
+.scrollImg{width: 980px;height: 250px;overflow: hidden;margin-left: 100px;margin-top: 100px;position: relative;}
+.scrollImg button{border: 0;outline: 0;display: none;background: url(../img/icons.png) no-repeat;width: 25px;height: 54px;top: 50%;margin-top:-27px;position: absolute;}
+.scrollImg:hover button{opacity: 0.5;display: block;}
+.scrollImg button:hover{opacity: 1;}
+.scrollImg button.moveleft{background-position: 0px 0px;left: 0;}
+.scrollImg button.moveright{background-position: -35px 0px;right: 0;}
+
+
+
+.scrollImg ul{margin-left: 0;}
+.scrollImg ul li{ float: left;width: 180px;height: 250px;margin-right: 20px;}
+.scrollImg ul li img{width: 100%;height: 100%;}
