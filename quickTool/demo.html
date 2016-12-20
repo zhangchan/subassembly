@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>quickTool</title>
+    <link rel="stylesheet" type="text/css" href="http:cdn.bootcss.com/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    
+</head>
+
+<body style="height:1000px;">
+    <div class="common-silder">
+        <ul>
+            <li class="c-p">
+                <a dtitle="我的账户" href="">
+                    <span>我的账户<i></i></span>
+                </a>
+            </li>
+            <li class="c-d">
+                <a dtitle="我的订单" href="">
+                    <span>我的订单<i></i></span>
+                </a>
+            </li>
+            <li class="c-f">
+                <a dtitle="我的收藏" href="">
+                    <span>我的收藏<i></i></span>
+                </a>
+            </li>
+            <li class="c-s">
+                <a dtitle="意见反馈" href="javascript:;">
+                    <span>意见反馈<i></i></span>
+                </a>
+            </li>
+            <li class="c-k">
+                <a href="">
+                    <span>在线客服<i></i></span>
+                </a>
+            </li>
+        </ul>
+        <ul class="common-cstb">
+            <li class="c-q">
+                <a href="javascript:;">
+                    <span>
+                        <img src="img/erw.png" height="100" width="100">
+                        <p><b>手机登录</b></p>
+                        <i></i>
+                    </span>
+                </a>
+
+
+            </li>
+            <li class="c-t">
+                <a href="javascript:;">
+                    <span>返回顶部<i></i></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
+<!-- <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript">
+        var ct = document.querySelector(".c-t");
+        window.onscroll = function () {
+            ct.style.visibility = document.body.scrollTop == 0 ? "hidden" : "visible";
+        }
+        ct.onclick = function(){
+            document.body.scrollTop = 0;
+        }
+    </script>
