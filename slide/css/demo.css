@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;}
+li{list-style-type: none;}
+
+
+
+.slide{ width: 860px;height: 360px;position: relative;overflow: hidden;margin: 100px;}
+.slide .sl_img{position: relative;}
+.slide .sl_img .item{position: absolute;top: 0;left: 0;display: none;transition: all 1s ease-in 0.2s;}
+.slide .sl_img .item.cur{display: block;transition: all 1s ease-in 0.2s;}
+.slide .sl_img .item img{width: 100%;height: 100%;transition: all 1s ease-in 0.2s;}
+.slide ul.sl_icons{position: absolute;bottom: 5%;left: 50%;margin-left: -310px;width: 650px;text-align: center;}
+.slide ul.sl_icons li{width: 100px;height: 60px;display: inline-block; margin-right: 20px;border: 1px solid #666;background: #fff;}
+.slide ul.sl_icons li.cur,.slide ul.sl_icons li:hover{position: relative;top: -4px;}
+.slide ul.sl_icons li img{width: 100%;height: 100%;opacity: 0.7;}
+.slide ul.sl_icons li.cur img,.slide ul.sl_icons li:hover img{opacity: 1;}
+
+
+.slide button.btn{border: 0;outline: 0;display: none;background: url(../img/icons.png) no-repeat;width: 25px;height: 54px;top: 50%;margin-top:-27px;position: absolute;}
+.slide:hover button{opacity: 0.5;display: block;}
+.slide button:hover{opacity: 1;}
+.slide button.btn.left{background-position: 0px 0px;left: 0;}
+.slide button.btn.right{background-position: -35px 0px;right: 0;}
+
+
+
+
+
+
+
+
