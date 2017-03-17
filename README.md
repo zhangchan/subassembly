@@ -6,15 +6,15 @@
 ![dropmenu](/source/img/a001.png)
 
 **scrollImg**
-![dropmenu](/source/img/a001.png)
-<img src="/source/img/a002.png">
+![scrollImg](/source/img/a001.png)
+
 
 **quickTool**
+![quickTool](/source/img/gj.png)
 
-<img src="/source/img/gj.png">
 
 
 
 **slide**
+![slide](/source/img/slide.png)
 
-<img src="/source/img/slide.png">
