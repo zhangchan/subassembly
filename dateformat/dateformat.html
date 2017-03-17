@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>dateformat</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	Object.prototype.getType = function(){
+		return Object.prototype.toString.call(this).slice(8,-1).toLowerCase();
+	}
+	Date.prototype.format = function(patten){
+		if(this.getType() != "date"){
+			return this;
+		}
+		var format = {
+			"y+" : this.getFullYear(),
+			"M+" : this.getMonth()+1,
+			"d+" : this.getDate(),
+			"H+" : this.getHours(),
+			"m+" : this.getMinutes(),
+			"s+" : this.getSeconds(),
+			"S"  : this.getMilliseconds(),
+			"h+" : this.getHours()%12,
+			"a"  : this.getHours()/12 < 1 ? "AM" : "PM"
+		}
+		patten = patten || "yyyy-MM-dd";
+		var returndate =  patten;
+		for (var key in format) {
+			var regexp = new RegExp("("+key+")");
+			if(regexp.test(patten)){
+				var zero = "";
+				for (var i = 0; i < RegExp.$1.length; i++) {
+					zero+=0;
+				}
+				var mtemp = RegExp.$1.length == 1 ? format[key] :(zero+format[key]).substring((""+format[key]).length);
+				returndate = returndate.replace(RegExp.$1,mtemp)
+			}
+		}
+		return returndate;
+	}
+	document.body.innerHTML = new Date().format("yyyy-MM-dd HH:mm:ss a");
+
+</script>
+</body>
+</html>
