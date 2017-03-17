@@ -3,16 +3,11 @@
 **dropmenu**  
 ![dropmenu](/source/img/a001.png)
 
-**scrollImg**
-
+**scrollImg**  
 ![scrollImg](/source/img/a002.png)
 
-
-**quickTool**
-
+**quickTool**  
 ![quickTool](/source/img/gj.png)
 
-
-**slide**
-
+**slide**  
 ![slide](/source/img/slide.png)
